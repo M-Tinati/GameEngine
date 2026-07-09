@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameEngine
 {
-    internal class Enemy
+    public class Enemy
     {
         public string Name { get; set; }
         public short Health { get; set; }

@@ -4,12 +4,33 @@ using System.Text;
 
 namespace GameEngine
 {
-    internal class Player
+    public class Player
     {
+        
         public string Name { get; set; }
-        public short Health { get; set; }
-        public short Damage { get; set; }
-        public int Level { get; set; }
+        public int Health { get; }
+        public int Damage { get; set; }
+        public int Level { get; }
         public int Gold { get; set; }
+
+
+        public Player(string name)
+        {
+            this.Name = name;
+            this.Health = 100;
+            this.Level = 1;
+            this.Gold = 50;
+        }
+
+
+        public void p()
+        {
+            Console.WriteLine($"{Name},{Health},{Level},{Gold}");
+        }
+
+
+
+
     }
+    
 }

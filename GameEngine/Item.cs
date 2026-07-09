@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameEngine
 {
-    internal class Item
+    public class Item
     {
     }
 }

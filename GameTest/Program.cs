@@ -1,1 +1,7 @@
-﻿Console.WriteLine("Hello, World!");
+﻿using GameEngine;
+
+Console.WriteLine("Hello, World!");
+Player p1 = new Player("mohammad");
+
+p1.p();
+Console.ReadKey();
