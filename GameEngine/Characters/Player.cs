@@ -2,24 +2,21 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GameEngine
+namespace GameEngine.Characters
 {
-    public class Player
+    public class Player : Character
     {
         
-        public string Name { get; set; }
-        public int Health { get; }
-        public int Damage { get; set; }
-        public int Level { get; }
+        
         public int Gold { get; set; }
 
 
         public Player(string name)
         {
             this.Name = name;
-            this.Health = 100;
-            this.Level = 1;
-            this.Gold = 50;
+            Health = 100;
+            Level = 1;
+            Gold = 50;
         }
 
 

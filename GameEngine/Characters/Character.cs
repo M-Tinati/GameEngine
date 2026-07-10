@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GameEngine
+namespace GameEngine.Characters
 {
-    public class Enemy
+    public class Character
     {
         public string Name { get; set; }
-        public short Health { get; set; }
-        public short Damage { get; set; }
+        public int Health { get; set; }
+        public int Damage { get; set; }
         public int Level { get; set; }
-        public int Gold { get; set; }
     }
 }
