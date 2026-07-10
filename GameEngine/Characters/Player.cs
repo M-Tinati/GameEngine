@@ -20,10 +20,10 @@ namespace GameEngine.Characters
         }
 
 
-        public string InformationPlayer()
-        {
-            return $"Your name is :{Name},Health :{Health} ,Level:{Level} ,Gold:{Gold}";
-        }
+        //public string InformationPlayer()
+        //{
+        //    return $"Your name is :{Name} ,Health:{Health} ,Level:{Level} ,Gold:{Gold}";
+        //}
 
 
 
