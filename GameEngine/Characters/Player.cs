@@ -11,16 +11,16 @@ namespace GameEngine.Characters
         public int Gold { get; set; }
 
 
-        public Player(string name)
+        public Player(string name,int health,int level, int gold)
         {
-            this.Name = name;
-            Health = 100;
-            Level = 1;
-            Gold = 50;
+            Name = name;
+            Health = health;    
+            Level = level;
+            Gold = gold;
         }
 
 
-        public void p()
+        public void InformationPlayer()
         {
             Console.WriteLine($"{Name},{Health},{Level},{Gold}");
         }
