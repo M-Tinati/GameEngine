@@ -20,9 +20,9 @@ namespace GameEngine.Characters
         }
 
 
-        public void InformationPlayer()
+        public string InformationPlayer()
         {
-            Console.WriteLine($"{Name},{Health},{Level},{Gold}");
+            return $"Your name is :{Name},Health :{Health} ,Level:{Level} ,Gold:{Gold}";
         }
 
 
