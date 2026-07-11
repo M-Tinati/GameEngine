@@ -7,9 +7,8 @@ namespace GameEngine.Characters
     public class Enemy
     {
         private string _name;
-        private int _health;
-        private int _damge;
-
+        public int Health;
+        public int Damage;
 
         /// <summary>
         /// Health not should less than zero
@@ -26,32 +25,6 @@ namespace GameEngine.Characters
                     Console.WriteLine("Please Enter Your name !You can not empty this");
                 }
                 _name = value;
-            }
-        }
-
-        public int Health
-        {
-            get { return _health; }
-            set
-            {
-                if (value < 0)
-                {
-                    Console.WriteLine("Your Health value less than 0 you dead?");
-                }
-                _health = value;
-            }
-        }
-
-        public int Damage
-        {
-            get { return _damge; }
-            set
-            {
-                if (value < 0)
-                {
-                    Console.WriteLine("Stop it You kill it");
-                }
-                _damge = value;
             }
         }
     }

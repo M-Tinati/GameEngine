@@ -1,4 +1,5 @@
 ﻿using GameEngine.Characters;
+using GameEngine.Characters.Enemys;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,6 +19,7 @@ namespace GameTest.Menus
         }
 
         List<Player> players = new List<Player>();
+        List<Enemy> enemy = new List<Enemy>();
 
         public void Start()
         {
@@ -55,6 +57,14 @@ namespace GameTest.Menus
                             else
                             {
                                 Console.WriteLine("not have player yet!!!!");
+                            }
+                            break;
+                        case 3:
+                            enemy.Add(new Goblin());
+                            enemy.Add(new Wolf());
+                            foreach (var i in enemy)
+                            {
+                                Console.WriteLine($"Enemy name is:{i.Name} ,Health:{i.Health} ,Level:{i.Damage}");
                             }
                             break;
                     }
