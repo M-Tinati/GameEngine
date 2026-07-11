@@ -20,11 +20,14 @@ namespace GameTest.Menus
 
         List<Player> players = new List<Player>();
         List<Enemy> enemy = new List<Enemy>();
-
+        
+        
         public void Start()
         {
 
             int Input = 0;
+            enemy.Add(new Goblin());
+            enemy.Add(new Wolf());
             while (Input != 4)
             {
                 try
@@ -60,11 +63,21 @@ namespace GameTest.Menus
                             }
                             break;
                         case 3:
-                            enemy.Add(new Goblin());
-                            enemy.Add(new Wolf());
+
                             foreach (var i in enemy)
                             {
                                 Console.WriteLine($"Enemy name is:{i.Name} ,Health:{i.Health} ,Level:{i.Damage}");
+                            }
+                            Console.WriteLine("With Which of the enemies want to fight the match?");
+                            Console.WriteLine("Enter the name of the enemy");
+                            string InputUserEnemy = Console.ReadLine().ToLower();
+                            if (InputUserEnemy == "goblin")
+                            {
+                                Console.WriteLine("You choose Goblin");
+                            }
+                            else if (InputUserEnemy == "wolf")
+                            {
+                                Console.WriteLine("You choose Wolf");
                             }
                             break;
                     }
