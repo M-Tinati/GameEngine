@@ -16,6 +16,9 @@ namespace GameTest.Menus
         }
         public void InventoyesInformation()
         {
+            Console.WriteLine("====================");
+            Console.WriteLine("=====Inventoryes====");
+            Console.WriteLine("====================");
             foreach (Item i in item)
             {
                 Console.WriteLine($"{i.NameItem}");

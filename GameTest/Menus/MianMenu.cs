@@ -17,12 +17,12 @@ namespace GameTest.Menus
             InformationPlayer = 2,
             Enemy = 3,
             InventoryPlayer = 4,
-            Exit = 0
+            Exit = 5
         }
 
         List<Player> players = new List<Player>();
         List<Enemy> enemy = new List<Enemy>();
-
+        
 
         public void Start()
         {
@@ -30,7 +30,7 @@ namespace GameTest.Menus
             int Input = 0;
             enemy.Add(new Goblin());
             enemy.Add(new Wolf());
-            while (Input != 4)
+            while (Input != 5)
             {
                 try
                 {
@@ -41,7 +41,7 @@ namespace GameTest.Menus
                     Console.WriteLine($"2.{Startmenu.InformationPlayer}");
                     Console.WriteLine($"3.{Startmenu.Enemy}");
                     Console.WriteLine($"4.{Startmenu.InventoryPlayer}");
-                    Console.WriteLine($"0.{Startmenu.Exit}");
+                    Console.WriteLine($"5.{Startmenu.Exit}");
                     Console.WriteLine("Enter Row:");
                     Input = Convert.ToInt32(Console.ReadLine());
                     switch (Input)
@@ -84,9 +84,6 @@ namespace GameTest.Menus
                             }
                             break;
                         case 4:
-                            Console.WriteLine("====================");
-                            Console.WriteLine("=====Inventoryes====");
-                            Console.WriteLine("====================");
                             ItemMenu Im = new ItemMenu();
                             Im.ItemMenus();
                             Im.InventoyesInformation();
