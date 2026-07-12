@@ -1,5 +1,6 @@
 ﻿using GameEngine.Characters;
 using GameEngine.Characters.Enemys;
+using GameEngine.Inventory;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,13 +16,14 @@ namespace GameTest.Menus
             CreatePlayer = 1,
             InformationPlayer = 2,
             Enemy = 3,
-            Exit = 4
+            InventoryPlayer = 4,
+            Exit = 0
         }
 
         List<Player> players = new List<Player>();
         List<Enemy> enemy = new List<Enemy>();
-        
-        
+
+
         public void Start()
         {
 
@@ -38,7 +40,8 @@ namespace GameTest.Menus
                     Console.WriteLine($"1.{Startmenu.CreatePlayer}");
                     Console.WriteLine($"2.{Startmenu.InformationPlayer}");
                     Console.WriteLine($"3.{Startmenu.Enemy}");
-                    Console.WriteLine($"4.{Startmenu.Exit}");
+                    Console.WriteLine($"4.{Startmenu.InventoryPlayer}");
+                    Console.WriteLine($"0.{Startmenu.Exit}");
                     Console.WriteLine("Enter Row:");
                     Input = Convert.ToInt32(Console.ReadLine());
                     switch (Input)
@@ -79,6 +82,14 @@ namespace GameTest.Menus
                             {
                                 Console.WriteLine("You choose Wolf");
                             }
+                            break;
+                        case 4:
+                            Console.WriteLine("====================");
+                            Console.WriteLine("=====Inventoryes====");
+                            Console.WriteLine("====================");
+                            ItemMenu Im = new ItemMenu();
+                            Im.ItemMenus();
+                            Im.InventoyesInformation();
                             break;
                     }
                 }
