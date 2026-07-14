@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata;
 using System.Text;
 
 namespace GameEngine.Characters
@@ -18,7 +19,7 @@ namespace GameEngine.Characters
         /// 
 
 
-        
+       
         public string Name
         {
             get { return _name; }

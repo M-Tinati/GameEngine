@@ -14,7 +14,7 @@ namespace GameEngine.Characters.Enemys
         /// Health not should less than zero
         /// zero == dead
         /// </summary>
-
+        
         public virtual void Attack()
         {
             //pass

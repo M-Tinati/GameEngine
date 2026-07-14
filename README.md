@@ -311,6 +311,9 @@
 - [x] abstract Class
 - [x] abstract method
 - [x] Enum
+- [x] List-Generic
+- [x] virtual - override
+- [x] Property
 
 
 
