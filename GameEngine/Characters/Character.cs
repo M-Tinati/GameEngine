@@ -15,7 +15,10 @@ namespace GameEngine.Characters
         /// Health not should less than zero
         /// zero == dead
         /// </summary>
+        /// 
 
+
+        
         public string Name
         {
             get { return _name; }

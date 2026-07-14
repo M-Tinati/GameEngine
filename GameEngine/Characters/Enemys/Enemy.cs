@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GameEngine.Characters
+namespace GameEngine.Characters.Enemys
 {
-    public class Enemy
+    public abstract class Enemy
     {
         private string _name;
         public int Health;
@@ -14,6 +14,11 @@ namespace GameEngine.Characters
         /// Health not should less than zero
         /// zero == dead
         /// </summary>
+
+        public virtual void Attack()
+        {
+            //pass
+        }
 
         public string Name
         {

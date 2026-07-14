@@ -310,6 +310,7 @@
 - [x] ذخیره پلیر در لیست
 - [x] abstract Class
 - [x] abstract method
+- [x] Enum
 
 
 
