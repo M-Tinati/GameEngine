@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameEngine.Characters
 {
-    public class Character
+    public abstract class Character
     {
         private string _name;
         private int _health;
